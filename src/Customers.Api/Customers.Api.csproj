@@ -10,6 +10,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.SqlServer" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" />
@@ -17,6 +19,19 @@
 	<PackageReference Include="Microsoft.AspNetCore.OpenApi" />
 	<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" />
 	<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" />
+    <PackageReference Include="Carter" />
+	<PackageReference Include="MediatR" />
+	<PackageReference Include="Mapster" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Customers\UpdateCustomer\" />
+    <Folder Include="Customers\CreateCustomer\" />
+    <Folder Include="Customers\GetCustomers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BuildingBlocks\BuildingBlocks.csproj" />
   </ItemGroup>
 
 </Project>
