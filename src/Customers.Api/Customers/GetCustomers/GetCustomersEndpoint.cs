@@ -3,7 +3,7 @@ using Customers.Api.Data.Entities;
 using Mapster;
 using MediatR;
 
-namespace Customers.Api.Customers.DeleteCustomer;
+namespace Customers.Api.Customers.GetCustomers;
 
 public record GetCustomersRequest(int? PageNumber = 1, int? PageSize = 10);
 public record GetCustomersResponse(IEnumerable<Customer> Customers);

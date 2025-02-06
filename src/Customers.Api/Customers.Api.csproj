@@ -25,9 +25,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Customers\DeleteCustomer\" />
     <Folder Include="Customers\UpdateCustomer\" />
     <Folder Include="Customers\CreateCustomer\" />
-    <Folder Include="Customers\GetCustomers\" />
   </ItemGroup>
 
   <ItemGroup>

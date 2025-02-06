@@ -3,9 +3,9 @@ using Customers.Api.Data;
 using Customers.Api.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Customers.Api.Customers.DeleteCustomer;
+namespace Customers.Api.Customers.GetCustomers;
 
-public record GetCustomersQuery(int PageNumber = 1, int PageSize = 10) : BuildingBlocks.CQRS.IQuery<GetCustomersResult>;
+public record GetCustomersQuery(int PageNumber = 1, int PageSize = 10) : IQuery<GetCustomersResult>;
 
 public record GetCustomersResult(IEnumerable<Customer> Customers);
 
