@@ -11,7 +11,7 @@ public class CreateCustomerCommandValidator : AbstractValidator<CreateCustomerCo
             .Length(1, 200).WithMessage("Name must be between 1 and 200 characters");
         RuleFor(x => x.Surname).NotEmpty().WithMessage("Surname is required")
             .Length(1, 200).WithMessage("Surname must be between 1 and 200 characters");
-        RuleFor(x => x.Gender).NotEmpty().WithMessage("Gender is required")
+        RuleFor(x => x.Gender)
             .IsInEnum().WithMessage("Gender must be Male, Female or Other");
         RuleFor(x => x.BirthDate).NotEmpty().WithMessage("Birth date is required.");
         RuleFor(x => x.Address)
