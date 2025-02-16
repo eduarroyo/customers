@@ -1,6 +1,8 @@
-﻿namespace Customers.Api.Exceptions;
+﻿using BuildingBlocks.Exceptions;
 
-public class CustomerNotFoundException : Exception
+namespace Customers.Api.Exceptions;
+
+public class CustomerNotFoundException : NotFoundException
 {
     public CustomerNotFoundException(Guid customerId): base($"Customer with id {customerId} not found")
     {
